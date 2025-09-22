@@ -1,46 +1,82 @@
 # Instagram 全量分流规则
-# 更新时间：2025-09-14
+# 更新时间：2025-09-22
 # 作者：ChatGPT
 
+# ---------- Instagram 主域 ----------
 DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,www.instagram.com
+DOMAIN-SUFFIX,i.instagram.com
+DOMAIN-SUFFIX,m.instagram.com
+DOMAIN-SUFFIX,help.instagram.com
+DOMAIN-SUFFIX,api.instagram.com
+DOMAIN-SUFFIX,graph.instagram.com
+DOMAIN-SUFFIX,business.instagram.com
+DOMAIN-SUFFIX,uploads.instagram.com
+DOMAIN-SUFFIX,ads.instagram.com
 DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,ig.com
-
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,fbcdn.net
-DOMAIN-SUFFIX,fbsbx.com
-DOMAIN-SUFFIX,fbwat.ch
-DOMAIN-SUFFIX,fbcdn.com
-
-DOMAIN-SUFFIX,graph.instagram.com
-DOMAIN-SUFFIX,graph.facebook.com
-DOMAIN-SUFFIX,graph.fbpixel.com
-DOMAIN-SUFFIX,graph-meta.com
-DOMAIN-SUFFIX,graph-video.facebook.com
-
-DOMAIN-SUFFIX,scontent.cdninstagram.com
-DOMAIN-SUFFIX,cdn.fbsbx.com
-DOMAIN-SUFFIX,xx.fbcdn.net
-DOMAIN-SUFFIX,xx.cdninstagram.com
-DOMAIN-SUFFIX,xx.instagram.com
-
-DOMAIN-SUFFIX,ak.instagram.com
-DOMAIN-SUFFIX,ak.facebook.com
-DOMAIN-SUFFIX,ak.fbcdn.net
-DOMAIN-SUFFIX,fbcdn-a.akamaihd.net
 DOMAIN-SUFFIX,instagrammusic.com
 
-DOMAIN-SUFFIX,atdmt.com
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,fb.gg
+# ---------- Instagram 静态资源 / CDN ----------
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagramcdn.com
+DOMAIN-SUFFIX,scontent.cdninstagram.com
+DOMAIN-SUFFIX,static.cdninstagram.com
+DOMAIN-SUFFIX,instagram-assets.com
+DOMAIN-SUFFIX,instagramstatic-a.akamaihd.net
+DOMAIN-SUFFIX,instagramstatic-a.akamaized.net
+DOMAIN-SUFFIX,cdninstagram-a.akamaihd.net
 DOMAIN-SUFFIX,fbcdn-profile-a.akamaihd.net
+DOMAIN-SUFFIX,fbcdn-a.akamaihd.net
+DOMAIN-SUFFIX,xx.cdninstagram.com
+DOMAIN-SUFFIX,xx.instagram.com
+DOMAIN-KEYWORD,instagram.f     # scontent-xx.cdninstagram.com 各地区 CDN
+
+# ---------- Facebook / Meta 基础依赖 ----------
+DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.gg
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,metaverse.com
+DOMAIN-SUFFIX,fbwat.ch
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbcdn.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,cdn.fbsbx.com
+DOMAIN-SUFFIX,xx.fbcdn.net
+DOMAIN-SUFFIX,connect.facebook.net
+DOMAIN-SUFFIX,edge-mqtt.facebook.com
+DOMAIN-SUFFIX,star.c10r.facebook.com
+DOMAIN-SUFFIX,graph.facebook.com
+DOMAIN-SUFFIX,graph-video.facebook.com
+DOMAIN-SUFFIX,graph.fbpixel.com
+DOMAIN-SUFFIX,graph-meta.com
 
+# ---------- Meta 生态相关（部分 IG 会调用） ----------
 DOMAIN-SUFFIX,accountkit.com
 DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,msngr.com
 DOMAIN-SUFFIX,workplace.com
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,tfbnw.net
+
+# ---------- 常见 CDN / 加速域 ----------
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,ak.fbcdn.net
+DOMAIN-SUFFIX,ak.facebook.com
+DOMAIN-SUFFIX,ak.instagram.com
+DOMAIN-SUFFIX,akameized.net
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,cdn-ig.net
+
+# ---------- 广告 / 追踪 ----------
+DOMAIN-SUFFIX,atdmt.com
+DOMAIN-SUFFIX,ads.instagram.com
+DOMAIN-SUFFIX,ads.facebook.com
+DOMAIN-SUFFIX,ads.fbsbx.com
+
+# ---------- END ----------
